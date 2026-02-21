@@ -1,3 +1,3 @@
 <template>
-        <EGGHero/>
+    <SMHero/>
 </template>
