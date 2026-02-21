@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+@theme {
+    --color-primary: #709F6E;
+    --color-secondary:#FFF6E9;
+    --font-primary: 'M PLUS Code Latin';
+    --font-secondary: 'Mohave';
+}
+
+.body {
+    font-family: 'Mohave';
+}
