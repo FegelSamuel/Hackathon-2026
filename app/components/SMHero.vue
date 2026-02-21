@@ -24,14 +24,18 @@
         <p class="mt-6 text-lg font-secondary leading-8 text-slate-300">
           Upload EEG data and detect Alzheimer's Disease using our AI-Powered tool.
         </p>
-
-        <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <SMButton
-            size="xl"
-            text="Start Now"
-          >
-          </SMButton>
-        </div>
     </div>
+    <NuxtLink
+      to="/ai"
+      class="fixed right-6 top-1/2 -translate-y-1/2 z-50
+            flex items-center justify-center
+            h-14 w-14
+            transition-all duration-300
+            group"
+    >
+      <span class="text-white text-3xl transition-transform duration-300 group-hover:translate-x-1">
+        →
+      </span>
+    </NuxtLink>
   </section>
 </template>
