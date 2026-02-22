@@ -6,15 +6,15 @@
             <h1 class="w-full text-center font-bold text-2xl">UPLOAD EEG DATA</h1>
             <div class="flex flex-col items-center my-5 gap-3">
                 <UFileUpload v-model="selectedFile" accept=".csv" label="Drop File Here (max 20MB)" class="w-96 min-h-48" />
-                <SMButton text="SUBMIT" @click="submitCSV()"/>
+                <SMButton size="2xl" text="SUBMIT" @click="submitCSV"/>
             </div>
         </div>
 
         <!-- IN PROCESS SCREEN -->
         <div v-else-if="states[currState]=='processing'">
-            <!-- <h1 class="w-full text-center font-bold text-2xl animation-pulse">PROCESSING DATA...</h1> -->
-            <div class="my-5 w-full flex justify-center">
-                <img src="https://media.tenor.com/boSsE56i-F8AAAAM/genshin-wish.gif" class="h-full w-full"></img>
+            <div class="w-full flex flex-col items-center justify-center gap-4 py-20">
+                <ULoader size="xl" />
+                <p class="text-sm opacity-70">Processing data...</p>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
             <!-- next steps buttons -->
             <div class="flex flex-row justify-center gap-3 delay-[2s] animate-window-fade-in">
                 <SMButton text="EXPORT RESULT"/>
-                <SMButton text="RESET" @click="reset()"/>
+                <SMButton text="RESET" @click="reset"/>
             </div>
         </div>  
 
@@ -36,7 +36,7 @@
          <div v-else>
             <h1 class="w-full text-center font-bold text-2xl">ERROR</h1>
             <div class="flex flex-row justify-center">
-                <SMButton text="RESTART" @click="reset()"/>
+                <SMButton text="RESTART" @click="reset"/>
             </div>
          </div>
     </div>
@@ -51,9 +51,8 @@ const currState = ref(0)
 const selectedFile = ref<File | null>(null)
 
 
-function submitCSV() {
+const submitCSV = () => {
     // validity checks
-    console.log(selectedFile.value)
     if (selectedFile.value == null) {
         alert("Please upload a file.")
         return;
@@ -70,16 +69,16 @@ function submitCSV() {
     calculateData()
 }
 
-function calculateData() {
+const calculateData = () => {
     const balls = ref(true)
   //simulate a 1 sec wait/buffer before data is ready to present
   setTimeout(() => {
     currState.value++;
-  }, 4500)
+  }, 2500)
 
 }
 
-function reset() {
+const reset = () => {
     currState.value = 0;
     selectedFile.value = null;
 }

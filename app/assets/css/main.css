@@ -10,7 +10,6 @@
     --font-primary: 'M PLUS Code Latin';
     --font-secondary: 'Mohave';
 
-    
     --animate-open-window: open-window 1s ease-in-out;
     @keyframes open-window {
         0% {
@@ -33,6 +32,12 @@
 
 }
 
+    :root.light {
+        --color-primary: #8BC34A; /* Lighter green for primary in light mode */
+        --color-primary-hover: #689F38; /* Slightly darker green for hover */
+        --color-secondary: #E0F2F1; /* A light teal for secondary in light mode */
+    }
+
 .body {
     font-family: 'Mohave';
 }
@@ -42,7 +47,7 @@
   position: absolute;
   width: 100%;
   left: 0;
-  transition: transform 0.6s ease;
+  transition: transform 0.5s ease;
 }
 
 .page-enter-from {

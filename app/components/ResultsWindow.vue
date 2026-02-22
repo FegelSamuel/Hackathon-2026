@@ -25,7 +25,7 @@ const isDark = computed({
 })
 
 
-const results = ref("You have mega ultra super Alzheimer's Disease.")
-const reasoning = ref("You suck balllllllllllllllllllllsssss BALLLSSSS");
+const results = ref("This patient is at risk for Alzheimer's Disease")
+const reasoning = ref("Abnormally large alpha waves");
 
 </script>

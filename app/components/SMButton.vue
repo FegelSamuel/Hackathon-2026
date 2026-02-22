@@ -1,6 +1,6 @@
 <template> 
     <UButton 
-        class="py-1 px-4 m-2 bg-primary hover:bg-primary-hover rounded-full font-secondary text-white transition text-center shadow-lg"
+        class="cursor-pointer py-1 px-4 m-2 bg-primary hover:bg-primary-hover rounded-full font-secondary text-white transition text-center shadow-lg"
         :class="{
             'text-xs': size=='xs',
             'text-sm': size=='sm',
