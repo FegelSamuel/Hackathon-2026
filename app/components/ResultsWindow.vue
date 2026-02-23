@@ -1,11 +1,11 @@
 <template>
-    <div class="absolute max-w-1/2 w-full bg-secondary shadow-inner rounded-xl animate-open-window max-h-96 h-full overflow-hidden font-secondary"
+    <div class="absolute w-full max-w-md bg-secondary shadow-inner rounded-xl animate-open-window max-h-96 h-full overflow-hidden font-secondary"
         :class="{ 'bg-secondary-dark': isDark, 'text-white': isDark }">
         <div class="flex flex-col items-start p-5 w-full">
                 <b>Results</b>
-                <p>{{ results }}</p>
-                <b>Reasoning</b>
-                <p>{{ reasoning }}</p>
+                <p class="text-sm sm:text-base">{{ results }}</p>
+                <b class="mt-4">Reasoning</b>
+                <p class="text-sm sm:text-base">{{ reasoning }}</p>
          </div>
     </div>
     

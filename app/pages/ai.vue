@@ -1,11 +1,11 @@
 <template>
-    <div class="mt-10 font-secondary">
+    <div class="mt-10 font-secondary px-4 sm:px-6 lg:px-8">
 
         <!-- UPLOAD SCREEN -->
         <div v-if="states[currState]=='upload'">
             <h1 class="w-full text-center font-bold text-2xl">UPLOAD EEG DATA</h1>
             <div class="flex flex-col items-center my-5 gap-3">
-                <UFileUpload v-model="selectedFile" accept=".csv" label="Drop File Here (max 20MB)" class="w-96 min-h-48" />
+                <UFileUpload v-model="selectedFile" accept=".csv,.xlsx" label="Drop File Here (max 20MB)" class="w-full max-w-md min-h-48" />
                 <SMButton size="2xl" text="SUBMIT" @click="submitCSV"/>
             </div>
         </div>

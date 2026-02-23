@@ -9,20 +9,16 @@
     />
 
     <!-- Washed overlay -->
-    <div class="absolute inset-0 -z-10 bg-slate-900/70 dark:bg-slate-900/70 light:bg-slate-100/70 backdrop-blur-[2px]" />
+    <div class="absolute inset-0 -z-10 bg-slate-900/70 dark:bg-slate-900/70 light:bg-slate-100/40 backdrop-blur-[2px]" />
 
     <!-- Content -->
-    <div class="mx-10 max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-        <p class="text-sm font-semibold font-secondary uppercase tracking-[0.3em] text-primary">
-          EEG-Based Alzheimer’s Screening
-        </p>
-
-        <h1 class="mt-6 text-4xl font-semibold font-primary tracking-tight text-white dark:text-white light:text-gray-900 sm:text-6xl">
-          Alzheimer's Slot Machine
+    <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+        <h1 class="mt-6 text-4xl font-semibold font-primary tracking-tight text-white dark:text-white light:text-gray-900 sm:text-5xl md:text-6xl">
+          Alzheimer's Predictor
         </h1>
 
-        <p class="mt-6 text-lg font-secondary leading-8 text-slate-300 dark:text-slate-300 light:text-gray-700">
-          Upload EEG data and detect Alzheimer's Disease using our AI-Powered, B2B SaaS
+        <p class="mt-6 text-lg font-secondary leading-8 text-slate-300 dark:text-slate-300 light:text-gray-700 md:text-xl">
+          Upload EEG data and detect Alzheimer's Disease using our AI-Powered, HIPAA Compliant, B2B SaaS. None of your data is transmitted anywhere. 
         </p>
     </div>
     <NuxtLink
