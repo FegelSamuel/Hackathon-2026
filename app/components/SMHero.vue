@@ -18,7 +18,7 @@
         </h1>
 
         <p class="mt-6 text-lg font-secondary leading-8 text-slate-300 dark:text-slate-300 light:text-gray-700 md:text-xl">
-          Upload EEG data and detect Alzheimer's Disease using our AI-Powered, HIPAA Compliant, B2B SaaS. None of your data is transmitted anywhere. 
+          Upload EEG data and detect Alzheimer's Disease using our AI-Powered, HIPAA Compliant, B2B SaaS. None of your data is saved anywhere. 
         </p>
     </div>
     <NuxtLink
